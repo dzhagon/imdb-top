@@ -1,0 +1,45 @@
+html, body {
+    display: block;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.grid_stretch {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 50px;
+}
+.grid_card-fixed {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
+.grid_card-fixed2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 10rem);
+  grid-gap: 0.5rem;
+  justify-content: space-around;
+}
+.grid_card-stretch {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    background: green;
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  .button:hover,
+  .button:active {
+    background: #00a900;
+  }
